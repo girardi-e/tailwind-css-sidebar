@@ -7,14 +7,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#202225",
-        secondary: "#5865f2",
+        primary: '#202225',
+        secondary: '#5865f2',
         gray: colors.trueGray
       }
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      borderRadius: ['hover'],
+      visibility: ['hover', 'group-hover', 'focus']
+    },
   },
   plugins: [],
 }
